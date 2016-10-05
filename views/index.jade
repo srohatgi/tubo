@@ -3,12 +3,14 @@ extends layout
 block content
   h1= title
   case cheatsheet 
-    when "algebra-1"
-      p `ax^2 + bx + c = 0 .`
-      p `x = (-b +- sqrt(b^2-4ac))/(2a) .`
-    when "algebra-2"
-      p wow algebra-2
-    when "precal"
-      p wow precal
-    when "ap-chemistry"
-      p wow ap-chemistry
+    when "polynomials"
+      p for a quadratic equation: 
+      p `f(x) = ax^2 + bx + c`, 
+      p roots are: 
+      p `x = (-b +- sqrt(b^2-4ac))/(2a)`
+    when "trigonometry"
+      p wow trigonometry
+    when "calculus"
+      p wow calculus
+    when "stoichometry"
+      p wow stoichometry

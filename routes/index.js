@@ -6,7 +6,7 @@ router.get('/', (req, res, next) => {
   var subject = req.query.subject;
   console.log("subject = " + subject);
   if (!subject) {
-    subject = 'algebra-1';
+    subject = 'polynomials';
   }
 
   res.render('index', { 
