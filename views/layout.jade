@@ -1,7 +1,16 @@
 doctype html
 html
   head
-    title= title
+    title= app_title
+    script(type="text/javascript", src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    image(src="/images/201550-education/png/learning.png", width="100", height="100")
     block content
+    div(id="cheator-selector")
+      button(type="submit", id="algebra-1") algebra-1
+      button(type="submit", id="algebra-2") algebra-2
+      button(type="submit", id="precal") precal
+      button(type="submit", id="ap-chemistry") ap-chemistry
+    footer proudly brought to you by Vanvan!
+      

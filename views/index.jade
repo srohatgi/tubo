@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  case cheatsheet 
+    when "algebra-1"
+      p `ax^2 + bx + c = 0 .`
+      p `x = (-b +- sqrt(b^2-4ac))/(2a) .`
+    when "algebra-2"
+      p wow algebra-2
+    when "precal"
+      p wow precal
+    when "ap-chemistry"
+      p wow ap-chemistry
