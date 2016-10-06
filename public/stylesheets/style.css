@@ -19,3 +19,13 @@ a {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.subject.selected {
+    background-color: #4CADFF;
+}
+
+footer {
+    height: 25px;
+    background: #eee;
+    font-size: 10px;
+}

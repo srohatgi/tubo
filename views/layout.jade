@@ -8,10 +8,14 @@ html
       window.onload = function() {
         var subjects = document.getElementsByClassName('subject');
         for(var i=0; i < subjects.length; i++) {
+          if (subjects[i].innerHTML === "#{cheatsheet}") {
+            subjects[i].classList.add('selected');
+          }
           (function() {
-            var x = subjects[i].innerHTML;
-            subjects[i].onclick = function() { location.href = '/?subject=' + x; }
-            // console.log("hello " + x);
+            var x = subjects[i];
+            subjects[i].onclick = function() { 
+              location.href = '/?subject=' + x.innerHTML;
+            }
           })();
         }
       }
